@@ -18,6 +18,16 @@ The guide assumes you are using Windows 10. But similar steps apply to Windows 8
 - Login as the newly created Windows user.
 - [Download and install the second instance MS Teams.](https://teams.microsoft.com/downloads)
 - Now press CTRL+ALT+DEL again > "switch user" > select the original account.
+
+- Use the below to script the setup of the account:
+```
+$Password = Read-Host -AsSecureString -Prompt "Enter password  for the new Teams Account"
+$User = Read-Host -Prompt "Name of MS Teams Account"
+New-LocalUser "MSTeamsUser" -Password $Password -FullName "MS Teams User" -Description "User account used to run MS Teams"
+
+Write-Host "Use these details inside Run_Multiple_Teams_PA.ps1"
+```
+
 - Open PowerShell console and run the following script:
 
 ```
@@ -42,7 +52,6 @@ Start-Process "C:\Users\$($credential.UserName)\AppData\Local\Microsoft\Teams\Up
 
 ## Limitations of the approach
 
-- If you need to run 3 instances of Teams - you will need 3 Windows accounts with Teams installed.
 - If you run multiple Team instances and use the same Microsoft account - you will receive notifications in all of them. If someone calls you - you will see two incoming calls at the same time.
 - Teams is a resource hog. It uses a lot of RAG and processing power.
 
@@ -50,6 +59,3 @@ Start-Process "C:\Users\$($credential.UserName)\AppData\Local\Microsoft\Teams\Up
 
 If you run the scripts and everything appears to work correctly but no new instance of teams starts up, close all open instaces of teams, open Task Manager (CTRL+SHIFT+ESC) and find all Teams processes and end the task. Run the script againa and you should now have a new instance of teams to log into. 
 
-## Summary
-
-I am looking forward to Microsoft implementing multiple Teams instances natively in order to avoid this workaround. In the meanwhile, this is the only way that works for me.
