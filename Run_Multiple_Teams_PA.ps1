@@ -1,6 +1,6 @@
 ﻿#run as admin 
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
-Set-ExecutionPolicy Bypass -Force
+Set-ExecutionPolicy Bypass -Force 
 # TODO: Specify your windows and password
 $username = 'USER_NAME' 
 $password += 'PASSWORD'
