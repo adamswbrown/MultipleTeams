@@ -25,7 +25,7 @@ $Password = Read-Host -AsSecureString -Prompt "Enter password  for the new Teams
 $User = Read-Host -Prompt "Name of MS Teams Account"
 New-LocalUser "MSTeamsUser" -Password $Password -FullName "MS Teams User" -Description "User account used to run MS Teams"
 
-Write-Host "Use these details inside Run_Multiple_Teams_PA.ps1"
+Write-Host "Account created. Please sign in As that account"
 ```
 
 - Open PowerShell console and run the following script:
