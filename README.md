@@ -10,6 +10,8 @@ The desktop app gives you full functionality in Teams - like calling and meeting
 
 Teams.BAT now runs Teams client in one Click, with no seccond account required!
 
+See Below for the old approch!
+
 ###
 
 
