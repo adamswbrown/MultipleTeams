@@ -6,7 +6,13 @@ Guide and PowerShell Scripts for running multiple MS Teams instances
 ## Why not use Teams in the browser? 
 The desktop app gives you full functionality in Teams - like calling and meeting and desktop sharing. Performance is better in the desktop app due to data caching.
 
-## UPDATE ##
+## UPDATE 14-10-2020 ##
+
+Running a seccond Teams instance via a spoofed user profile can cause issues with Teams Addin in Outlook not allowing you to add Teams events.
+
+Suggested workarround is to use the orginal apoorch of a 2 account method 
+
+## UPDATE 1-4-2019 ##
 
 Teams.BAT now runs Teams client in one Click, with no seccond account required!
 
@@ -30,7 +36,7 @@ cd "%OLD_USERPROFILE%\AppData\Local\Microsoft\Teams"
 ```
 
 
-See Below for the old approch!
+2 Account Method 
 
 ###
 
