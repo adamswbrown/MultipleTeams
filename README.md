@@ -10,7 +10,7 @@ The desktop app gives you full functionality in Teams - like calling and meeting
 
 Running a seccond Teams instance via a spoofed user profile can cause issues with Teams Addin in Outlook not allowing you to add Teams events.
 
-Suggested workarround is to use the orginal apoorch of a  [2 account method](#two-accounts)
+Suggested workarround is to use the orginal apoorch of a  2 Account Method - 
 
 ## UPDATE 1-4-2019 ##
 
@@ -36,7 +36,7 @@ cd "%OLD_USERPROFILE%\AppData\Local\Microsoft\Teams"
 ```
 
 
-## 2 Account Mehod  #two-accounts
+## 2 Account Mehod  
 
 ###
 
