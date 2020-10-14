@@ -36,7 +36,7 @@ cd "%OLD_USERPROFILE%\AppData\Local\Microsoft\Teams"
 ```
 
 
-[## 2 Account Mehod](#2AccountMethod) 
+## 2 Account Mehod #2AccountMethod
 
 ###
 
